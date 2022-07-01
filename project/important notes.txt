@@ -1,0 +1,9 @@
+Auto increment in database-
+	ALTER TABLE tablename add colomn_name int not null AUTO_INCREMENT primary key first;
+
+<script>
+                $('.card').click(function(){
+                 var id = $(this).attr('id');
+                 });
+</script>
+

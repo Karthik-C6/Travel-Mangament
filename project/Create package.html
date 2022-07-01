@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head><title>Create Package</title>
+<link rel="stylesheet" href="styles.css"> 
+<style>
+
+</style>
+</head>
+<body style="background-color: #FFFAF0;">
+    <h1 class="class">CREATE NEW PACKAGE</h1>
+    <div class="look1" style="margin:50px 400px ;">
+        <form action="package.php" method="POST" enctype='multipart/form-data'>
+        <div class="row">
+        <div class="col-25">
+         <label for='ID'>Package Name</label>
+        </div>
+        <div class="col-75">
+         <input type="text" id="ID" name="ID" placeholder="Enter your Package Id...."><br>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+         <label for="place">City</label>
+        </div>
+        <div class="col-75">
+         <input type="text" id="place" name="city" placeholder="What was the place...."><br> 
+        </div>
+        <div class="row">
+        <div class="col-25">
+          <label for="days">Number of days</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="days" name="days" placeholder="Enter no. of days the customer going to stay...."><br>
+        </div>
+        </div>
+        <!-- <div class="row">
+        <div class="col-25"> <label for=""></label>
+        </div>
+        <div class="col-75"><input type="text" id="" name="city"><br>
+        </div>
+        </div>-->
+        <div class="row">
+        <div class="col-25"><label for="hotel">Name of Hotel/House</label>
+        </div>
+        <div class="col-75"> <input type="text" id="hotel" name="hotel" placeholder="enter the name of hotel/house...."><br>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25"> <label for="beds">No. of Bed rooms</label>
+        </div>
+        <div class="col-75"><input type="text" id="beds" name="beds" placeholder="Enter No. of bed rooms...."><br>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25"><label for="Max">Maximum number of people allowed</label>
+        </div>
+        <div class="col-75"><input type="text" id="Max" name="max" placeholder="Enter Maximum number of people are allowed....."><br>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25"><label for="Address">Address of Hotel/House</label>
+        </div>
+        <div class="col-75"> <input type="text" id="address" name="address" placeholder="Enter the address of hotel/house....."><br>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+        <label for="des">Description</label>
+        </div>
+        <div class="col-75">
+        <textarea type="text" id="des" name="description" placeholder="What are plans and what are the famous places near you..." style="width:100%; height: 100px;"></textarea>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+        <label for="file">Select an image</label>
+        </div>
+        <div class="col-75">
+        <input type="file" id="file" name="image">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25"><label for="cost">Stay Amount</label>
+        </div>
+        <div class="col-75"><input type="text" id="cost" name="cost" placeholder="Enter the amount..."><br>
+        </div>
+        </div>
+        <div class="row">
+        <button class="b" style="width: 40%;" type="submit" name="create">Create Package</button>
+        </div> 
+        </form>
+    </div>
+</body>
+</html>

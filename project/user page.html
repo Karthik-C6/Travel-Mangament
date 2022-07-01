@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>User page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body  style="background-color: #FFFAF0;">
+        <h1 class="class">USER PAGE</h1>
+        <div class="look">
+            <button class="b" style="width: 100%;" onclick="fun1()">Book a package</button>
+            <button class="b" style="width: 100%;" onclick="fun2()">Book  tickes</button>
+            <form action="user login.php" method="POST"><button class="b" style="width: 100%;" type="submit" name="logout">Logout</button></form>
+            
+        </div>
+        <script>
+            function fun1(){
+                window.location="book package.php";
+            }
+            function fun2(){
+              window.location="book tickets.php";
+            }
+        </script>
+    </body>
+</html>

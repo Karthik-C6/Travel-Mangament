@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Agency</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        .top{
+            background:#0082e6;
+            max-height: 100%;
+            max-width: 100%;
+        }
+        .ab{
+            float: right;
+            margin-right: 20px;
+        }
+        .top ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        .top ul li a{
+            color:white;
+            font-size: 17px;
+            padding:7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        label.logo{
+            color:white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        a.active,a:hover{
+             background: #1b9bff;
+             transition: .5s;
+        }
+        body{
+            background: #23e3c9;
+        }
+        .lo{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        label #btn{
+          font-size:30px;
+          color: white;
+          line-height: 80px;
+          left : 250px;
+          cursor: pointer ; 
+          margin-left: 5px; 
+        }
+        .sidebar{
+            position: fixed;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #0082e6;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #check{
+            display: none;
+        }
+        #check:checked ~ .sidebar{
+            left: 0;
+        }
+        .slider{
+            width: 100%;
+            height: 700px;
+            border-radius: 10px;
+            overflow:  hidden;
+        }
+        .slides{
+            width: 500%;
+            height: 600px;
+            display: flex;
+        }
+        .slides input{
+            display: none;
+        }
+        .slide{
+            width: 20%;
+            transition: 2s;
+        }
+        .slide img{
+            width: 100%;
+            height: 600px;
+        }
+        .navigation-manual{
+            position: absolute;
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .manual-btn{
+            border-radius: 2px solid #010f0fda;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .manual-btn:not(:last-child){
+            margin-right: 40px;
+        }
+        .manual-btn:hover{
+            background: #40D3DC;
+        }
+        #radio1:checked ~ .first{
+            margin-left: 0;
+        }
+        #radio2:checked ~ .first{
+            margin-left: -20%;
+        }
+        #radio3:checked ~ .first{
+            margin-left: -40%;
+        }
+        .navigation-auto{
+            position: absolute;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 550px;
+            margin-left: -300px;
+        }
+        .navigation-auto div{
+            border: 2px solid #40D3DC;
+            padding: 5px;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        .navigation-auto div:not(:last-child){
+            margin-right: 40px;
+        }
+         #radio1:checked ~ .navigation-auto .auto-btn1{
+             background: #40D3DC;
+         }
+         #radio2:checked ~ .navigation-auto .auto-btn2{
+             background: #40D3DC;
+         }
+         #radio3:checked ~ .navigation-auto .auto-btn3{
+             background: #40D3DC;
+         }
+        .order{
+            margin-left: 30px;
+            margin-right: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #face{
+            margin-left: 90px;
+            margin-top: 35px;
+            font-size: 70px;
+            color: khaki;
+        } 
+        .top .sidebar ul a{
+            text-align: center;
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 65px;
+            font-size: 20px;
+            color: white;
+            box-sizing: border-box;
+            transition: .4s;
+            text-transform: uppercase;
+        } 
+        .top .sidebar h2{
+            font-size: 22px;
+            color: white;
+            line-height: 70px;
+            text-align: center;   
+        }
+</style>
+<body>
+    <div class="top">
+        <input type="checkbox" id="check">
+        <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        </label>
+        <div class="sidebar">
+            <i style="text-align: center;" class="fas fa-portrait" id="face"></i>
+            <h2 >User Name</h2>
+            <ul>
+                <a href="">Package</a>
+                <a href="">Trips</a>
+                <a href="">Transport Tickets</a>
+                <a href="">Logout</a>
+            </ul>
+              
+        </div>
+        <label class='logo'>Travel Agency</label>
+        <div class="ab">
+        <ul>
+        <li><a class='active' href="index.html">Home</a></li>
+        <li><a href="About Us.html">About</a></li>
+        <li><a href="contact us.html">contact</a></li>
+       <li><a href="">Login </a></li> 
+        </ul></div>
+    </div>
+    <div class="order">
+    <div class="lo">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slide first">
+                    <img src="1.jpg" alt="" width="100%" height="600px">
+                </div>
+                <div class="slide">
+                    <img src="2.jpg" alt="" width="100%" height="600px">
+                </div>
+                <div class="slide">
+                    <img src="3.jpg" alt="" width="100%" height="600px">
+                </div>
+                 <div class="navigation-auto">
+                     <div class="auto-btn1"></div>
+                     <div class="auto-btn2"></div>
+                     <div class="auto-btn3"></div>
+                 </div>
+            </div>
+             <div class="navigation-manual">
+                 <label for="radio1" class="manual-btn"></label>
+                 <label for="radio2" class="manual-btn"></label>
+                 <label for="radio3" class="manual-btn"></label>
+             </div>
+        </div>
+        </div>
+    </div>
+    </body>
+    <script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio' +counter).checked=true;
+        counter++;
+        if(counter>3){
+            counter=1;
+        }
+    },5000);
+    </script>
+</html>
